@@ -1,0 +1,95 @@
+---
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import Header from '../components/Header.astro';
+
+type Props = CollectionEntry<'blog'>['data'];
+
+const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<BaseHead title={title} description={description} />
+		<style>
+			main {
+				width: calc(100% - 2em);
+				max-width: 100%;
+				margin: 0;
+			}
+			.hero-image {
+				width: 100%;
+				margin-bottom: 2rem;
+			}
+			.hero-image img {
+				display: block;
+				margin: 0 auto;
+				border-radius: 8px;
+				box-shadow: 0 0 30px rgba(0, 210, 255, 0.2);
+				border: 2px solid var(--ps-neon);
+				width: 100%;
+				height: auto;
+				max-width: 960px;
+				aspect-ratio: 16 / 9;
+				object-fit: cover;
+			}
+			.title {
+				margin-bottom: 2em;
+				padding: 1em 0;
+				text-align: center;
+				line-height: 1;
+			}
+			.title h1 {
+				margin: 0 0 0.5em 0;
+				color: #fff;
+			}
+			.date {
+				margin-bottom: 0.5em;
+				color: var(--ps-neon);
+				font-weight: 600;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+			.last-updated-on {
+				font-style: italic;
+				color: var(--ps-text);
+				font-size: 0.9em;
+			}
+			@media (max-width: 720px) {
+				.prose { padding: 1.5em; }
+			}
+		</style>
+	</head>
+
+	<body>
+		<Header />
+		<main>
+			<article>
+				<div class="hero-image">
+					{heroImage && <img class="hero-img-tag" src={heroImage} alt="" />}
+				</div>
+				<div class="prose">
+					<div class="title">
+						<div class="date">
+							<FormattedDate date={pubDate} />
+							{
+								updatedDate && (
+									<div class="last-updated-on">
+										Last updated on <FormattedDate date={updatedDate} />
+									</div>
+								)
+							}
+						</div>
+						<h1>{title}</h1>
+						<hr />
+					</div>
+					<slot />
+				</div>
+			</article>
+		</main>
+		<Footer />
+	</body>
+</html>
