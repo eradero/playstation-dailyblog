@@ -46,50 +46,57 @@ import HeaderLink from './HeaderLink.astro';
 	header {
 		margin: 0;
 		padding: 0 1em;
-		background: var(--glass-bg);
-		backdrop-filter: blur(12px);
-		-webkit-backdrop-filter: blur(12px);
-		border-bottom: 1px solid var(--glass-border);
-		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		background: var(--ps-black);
+		border-bottom: 1px solid var(--ps-shadow-black);
 	}
 	h2 {
 		margin: 0;
 		font-size: 1.2em;
+		font-family: var(--font-family);
+		font-weight: 700;
 	}
-
 	h2 a,
 	h2 a.active {
 		text-decoration: none;
-		color: #ffffff;
-		font-weight: 800;
+		color: var(--ps-white);
 	}
 	nav {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		max-width: 1280px;
+		margin: 0 auto;
 	}
 	nav a {
-		padding: 1em 0.5em;
-		color: var(--text-primary);
-		border-bottom: 4px solid transparent;
+		padding: 1.5em 0.5em;
+		color: var(--ps-white);
+		font-size: 14px;
+		font-weight: 500;
+		border-bottom: 2px solid transparent;
 		text-decoration: none;
-		transition: color 0.2s;
+		transition: color 0.2s, border-bottom-color 0.2s;
 	}
 	nav a:hover {
-		color: var(--accent);
+		color: var(--link-hover-blue);
 	}
 	nav a.active {
-		text-decoration: none;
-		border-bottom-color: var(--accent);
-		color: var(--accent);
+		border-bottom-color: var(--ps-blue);
+		color: var(--ps-white);
 	}
-	.social-links,
-	.social-links a {
+	.internal-links {
 		display: flex;
-		color: var(--text-primary);
+		gap: 1.5em;
+	}
+	.social-links {
+		display: flex;
+		gap: 1em;
+	}
+	.social-links a {
+		padding: 1.5em 0;
+		color: var(--ps-white);
 	}
 	.social-links a:hover {
-		color: var(--accent);
+		color: var(--link-hover-blue);
 	}
 	@media (max-width: 720px) {
 		.social-links {

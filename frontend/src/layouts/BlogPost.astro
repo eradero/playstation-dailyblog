@@ -15,10 +15,8 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 	<head>
 		<BaseHead title={title} description={description} />
 		<style>
-			main {
-				width: calc(100% - 2em);
-				max-width: 100%;
-				margin: 0;
+			.article-section {
+				padding: 64px 0;
 			}
 			.hero-image {
 				width: 100%;
@@ -27,14 +25,20 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			.hero-image img {
 				display: block;
 				margin: 0 auto;
-				border-radius: 8px;
-				box-shadow: 0 0 30px rgba(0, 210, 255, 0.2);
-				border: 2px solid var(--ps-neon);
+				border-radius: 12px;
+				box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.08);
 				width: 100%;
 				height: auto;
-				max-width: 960px;
+				max-width: 1024px;
 				aspect-ratio: 16 / 9;
 				object-fit: cover;
+			}
+			.prose {
+				width: 800px;
+				max-width: calc(100% - 2em);
+				margin: auto;
+				padding: 3em 0;
+				color: var(--text-body);
 			}
 			.title {
 				margin-bottom: 2em;
@@ -44,30 +48,30 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			}
 			.title h1 {
 				margin: 0 0 0.5em 0;
-				color: #fff;
+				color: var(--text-display);
 			}
 			.date {
 				margin-bottom: 0.5em;
-				color: var(--ps-neon);
-				font-weight: 600;
+				color: var(--text-secondary);
+				font-weight: 500;
 				text-transform: uppercase;
-				letter-spacing: 1px;
+				letter-spacing: 0.5px;
+				font-size: 14px;
 			}
 			.last-updated-on {
 				font-style: italic;
-				color: var(--ps-text);
+				color: var(--text-secondary);
 				font-size: 0.9em;
-			}
-			@media (max-width: 720px) {
-				.prose { padding: 1.5em; }
 			}
 		</style>
 	</head>
 
-	<body>
+	<body class="surface-white">
 		<Header />
 		<main>
-			<article>
+			<section class="article-section">
+				<div class="container">
+					<article>
 				<div class="hero-image">
 					{heroImage && <img class="hero-img-tag" src={heroImage} alt="" />}
 				</div>
@@ -89,6 +93,8 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 					<slot />
 				</div>
 			</article>
+				</div>
+			</section>
 		</main>
 		<Footer />
 	</body>

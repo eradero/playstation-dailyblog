@@ -1,121 +1,183 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-	--ps-blue: #003791;
-	--ps-neon: #00d2ff;
-	--ps-dark: #050508;
-	--ps-darker: #020204;
-	--ps-text: #e0e6ed;
-	--ps-accent: #ff0055;
+	/* Primary Colors */
+	--ps-blue: #0070cc;
+	--ps-black: #000000;
+	--ps-cyan: #1eaedb;
 	
-	--glass-bg: rgba(5, 5, 8, 0.7);
-	--glass-border: rgba(0, 210, 255, 0.3);
-	--box-shadow: 0 0 20px rgba(0, 55, 145, 0.5);
+	/* Surfaces & Backgrounds */
+	--ps-white: #ffffff;
+	--ps-ice: #f5f7fa;
+	--ps-shadow-black: #121314;
+	--ps-divider: #f3f3f3;
 	
-	--font-heading: 'Orbitron', sans-serif;
-	--font-body: 'Inter', sans-serif;
-}
-
-@keyframes pulseNeon {
-	0% { box-shadow: 0 0 10px rgba(0, 210, 255, 0.2), inset 0 0 10px rgba(0, 210, 255, 0.1); border-color: rgba(0, 210, 255, 0.3); }
-	50% { box-shadow: 0 0 25px rgba(0, 210, 255, 0.6), inset 0 0 15px rgba(0, 210, 255, 0.2); border-color: rgba(0, 210, 255, 0.8); }
-	100% { box-shadow: 0 0 10px rgba(0, 210, 255, 0.2), inset 0 0 10px rgba(0, 210, 255, 0.1); border-color: rgba(0, 210, 255, 0.3); }
-}
-
-@keyframes bgScroll {
-	0% { background-position: 0% 50%; }
-	50% { background-position: 100% 50%; }
-	100% { background-position: 0% 50%; }
+	/* Typography Colors */
+	--text-display: #000000;
+	--text-body: #1f1f1f;
+	--text-secondary: #6b6b6b;
+	--text-inverse: #ffffff;
+	--link-hover-blue: #1883fd;
+	
+	/* Typography Specs */
+	--font-family: 'Inter', sans-serif;
 }
 
 body {
-	font-family: var(--font-body);
+	font-family: var(--font-family);
 	margin: 0;
 	padding: 0;
-	text-align: left;
-	background: linear-gradient(45deg, var(--ps-darker), #0a0e17, var(--ps-darker));
-	background-size: 200% 200%;
-	animation: bgScroll 15s ease infinite;
-	color: var(--ps-text);
-	word-wrap: break-word;
-	overflow-wrap: break-word;
-	min-height: 100vh;
+	color: var(--text-body);
+	background-color: var(--ps-ice);
+	-webkit-font-smoothing: antialiased;
 }
 
+/* Typography - Quiet Authority */
 h1, h2, h3, h4, h5, h6 {
-	font-family: var(--font-heading);
+	font-family: var(--font-family);
 	margin: 0 0 0.5rem 0;
-	color: #ffffff;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	text-shadow: 0 0 10px rgba(0, 210, 255, 0.5);
+	color: var(--text-display);
 }
 
-h1 { font-size: 3.5em; font-weight: 900; }
-h2 { font-size: 2.5em; }
-h3 { font-size: 2em; }
-h4 { font-size: 1.5em; }
-h5 { font-size: 1.2em; }
-h6 { font-size: 1em; }
+.display-xl {
+	font-size: clamp(32px, 5vw, 54px);
+	font-weight: 300;
+	line-height: 1.25;
+	letter-spacing: -0.1px;
+}
+
+.display-lg {
+	font-size: clamp(28px, 4vw, 44px);
+	font-weight: 300;
+	line-height: 1.25;
+	letter-spacing: 0.1px;
+}
+
+.display-md {
+	font-size: clamp(24px, 3vw, 35px);
+	font-weight: 300;
+	line-height: 1.25;
+}
 
 p {
 	margin: 0 0 1.5rem 0;
-	line-height: 1.7;
+	line-height: 1.5;
+	font-size: 18px;
+	font-weight: 400;
 }
 
 a {
-	color: var(--ps-neon);
+	color: var(--ps-blue);
 	text-decoration: none;
-	transition: all 0.3s ease;
+	transition: color 0.2s;
 }
-
 a:hover {
-	color: #ffffff;
-	text-shadow: 0 0 8px var(--ps-neon);
+	color: var(--link-hover-blue);
 }
 
-main {
-	width: 100%;
-	max-width: 1200px;
+/* Base Surfaces */
+.surface-dark {
+	background-color: var(--ps-black);
+	color: var(--text-inverse);
+}
+.surface-dark h1, .surface-dark h2, .surface-dark h3, .surface-dark h4 {
+	color: var(--text-inverse);
+}
+.surface-dark p {
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.surface-white {
+	background-color: var(--ps-white);
+}
+
+/* Container */
+.container {
+	max-width: 1280px;
 	margin: 0 auto;
-	padding: 3em 1em;
+	padding: 0 24px;
+}
+@media (min-width: 768px) {
+	.container { padding: 0 48px; }
 }
 
-/* GAMER CARDS */
-.gamer-card {
-	background: var(--glass-bg);
-	backdrop-filter: blur(10px);
-	border: 1px solid var(--glass-border);
-	border-radius: 8px;
-	padding: 2rem;
-	transition: all 0.3s ease;
-	position: relative;
-	overflow: hidden;
+/* The PlayStation Signature Button */
+.ps-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--ps-blue);
+	color: var(--ps-white) !important;
+	font-family: var(--font-family);
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: 0.4px;
+	padding: 12px 24px;
+	border-radius: 999px;
+	border: 2px solid transparent;
+	text-decoration: none;
+	transition: background-color 180ms ease, transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+	cursor: pointer;
 }
 
-.gamer-card::before {
-	content: '';
-	position: absolute;
-	top: 0; left: 0; width: 100%; height: 2px;
-	background: linear-gradient(90deg, transparent, var(--ps-neon), transparent);
+.ps-btn:hover {
+	background-color: var(--ps-cyan);
+	border-color: var(--ps-white);
+	box-shadow: 0 0 0 2px var(--ps-blue);
+	transform: scale(1.1); /* Subtle reduction of 1.2 for slightly better stability on web */
 }
 
-.gamer-card:hover {
-	transform: translateY(-5px);
-	animation: pulseNeon 2s infinite;
-}
-
-/* Base Headings for Markdown Content */
-.prose {
-	max-width: 800px;
-	margin: 0 auto;
-	background: var(--glass-bg);
-	padding: 3rem;
+/* Cards & Grid Items */
+.ps-card {
+	background: var(--ps-white);
 	border-radius: 12px;
-	border: 1px solid var(--glass-border);
-	box-shadow: var(--box-shadow);
+	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.08);
+	overflow: hidden;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
 }
-.prose img {
-	border-radius: 8px;
-	border: 2px solid var(--ps-neon);
+
+.ps-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.12);
+}
+
+.ps-card img {
+	width: 100%;
+	aspect-ratio: 16/9;
+	object-fit: cover;
+	border-bottom: 1px solid var(--ps-divider);
+}
+
+.ps-card-content {
+	padding: 24px;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.ps-card-title {
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 1.25;
+	color: var(--text-display);
+	margin-bottom: 8px;
+}
+
+.ps-card:hover .ps-card-title {
+	color: var(--ps-blue);
+}
+
+/* General Layout Elements */
+.section-padding {
+	padding: 64px 0;
+}
+@media (min-width: 1024px) {
+	.section-padding { padding: 96px 0; }
+}
+
+.dark-gradient {
+	background: linear-gradient(to bottom, var(--ps-shadow-black), var(--ps-black));
 }

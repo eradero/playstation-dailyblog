@@ -13,13 +13,9 @@ const today = new Date();
 <style>
 	footer {
 		padding: 2em 1em 6em 1em;
-		background: var(--glass-bg);
-		backdrop-filter: blur(12px);
-		-webkit-backdrop-filter: blur(12px);
-		border-top: 1px solid var(--glass-border);
-		color: var(--text-secondary);
+		background: var(--ps-blue);
+		color: var(--ps-white);
 		text-align: center;
-		margin-top: 4rem;
 	}
 	.social-links {
 		display: flex;
@@ -29,23 +25,21 @@ const today = new Date();
 	}
 	.social-links a {
 		text-decoration: none;
-		color: var(--text-secondary);
-		transition: color 0.2s;
+		color: var(--ps-white);
 	}
 	.social-links a:hover {
-		color: var(--accent);
+		color: var(--ps-cyan);
 	}
-	.footer-links {
-		margin-top: 1.5rem;
+	.legal-links {
+		margin-top: 2em;
 		font-size: 0.9em;
 	}
-	.footer-links a {
-		color: var(--text-secondary);
+	.legal-links a {
+		color: var(--ps-white);
 		text-decoration: none;
-		transition: color 0.2s;
 	}
-	.footer-links a:hover {
-		color: var(--accent);
+	.legal-links a:hover {
 		text-decoration: underline;
+		color: var(--ps-cyan);
 	}
 </style>
