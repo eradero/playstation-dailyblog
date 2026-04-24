@@ -64,21 +64,22 @@ def main():
         full_image_path = os.path.join("../frontend/public", f"images/{slug}.jpg")
         
         try:
-            if image_url:
-                print(f"Descargando imagen original para: {slug}")
-                os.makedirs(os.path.dirname(full_image_path), exist_ok=True)
-                # Some sites block default python user agents
-                headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
-                img_response = requests.get(image_url, timeout=20, headers=headers)
-                if img_response.status_code == 200:
-                    with open(full_image_path, "wb") as f:
-                        f.write(img_response.content)
-                else:
-                    print(f"Fallo al descargar la imagen. Status {img_response.status_code}")
-                    image_path = "" # Fallback if image fails
+            if not image_url:
+                print("No se encontró imagen válida. Usando imagen genérica de PlayStation.")
+                # Fallback to a high quality generic playstation wallpaper if no image found
+                image_url = "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?q=80&w=1024&auto=format&fit=crop"
+                
+            print(f"Descargando imagen para: {slug}")
+            os.makedirs(os.path.dirname(full_image_path), exist_ok=True)
+            # Some sites block default python user agents
+            headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
+            img_response = requests.get(image_url, timeout=20, headers=headers)
+            if img_response.status_code == 200:
+                with open(full_image_path, "wb") as f:
+                    f.write(img_response.content)
             else:
-                print("No se encontró imagen original en el artículo.")
-                image_path = ""
+                print(f"Fallo al descargar la imagen. Status {img_response.status_code}")
+                image_path = "" # Fallback if image fails
         except Exception as e:
             print(f"Error descargando imagen: {e}")
             image_path = ""

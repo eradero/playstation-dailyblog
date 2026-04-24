@@ -18,6 +18,12 @@ def fetch_latest_news():
         })
     return articles
 
+def is_valid_image(url):
+    if not url: return False
+    url_lower = url.lower()
+    bad_words = ['logo', 'avatar', 'icon', 'profile', 'default', 'placeholder', 'blank']
+    return not any(word in url_lower for word in bad_words)
+
 def extract_article_content(url):
     """Attempts to extract the main text content and image from a URL."""
     try:
@@ -32,12 +38,15 @@ def extract_article_content(url):
         # Extract image
         image_url = ""
         og_image = soup.find("meta", property="og:image")
-        if og_image and og_image.get("content"):
+        if og_image and og_image.get("content") and is_valid_image(og_image.get("content")):
             image_url = og_image.get("content")
-        elif soup.find("img"): # fallback to first image
-            first_img = soup.find("img")
-            if first_img.get("src") and first_img.get("src").startswith("http"):
-                image_url = first_img.get("src")
+        else:
+            # fallback to first valid image
+            for img in soup.find_all("img"):
+                src = img.get("src")
+                if src and src.startswith("http") and is_valid_image(src):
+                    image_url = src
+                    break
                 
         return content, image_url
     except Exception as e:
