@@ -9,55 +9,59 @@ import Layout from '../layouts/BlogPost.astro';
 	heroImage=""
 >
 	<div class="about-container">
-		<h2>Nuestra Misión</h2>
+		<h2>Tu Punto de Encuentro PlayStation</h2>
 		<p>
-			En <strong>PlayStation DailyBlog</strong>, nuestra misión es democratizar el acceso a la información sobre nuestro sector. Creemos firmemente que la información no debe ser un privilegio para pocos, sino una herramienta de conocimiento al alcance de todos.
+			¡Hola, gamer! Bienvenido a <strong>PlayStation DailyBlog</strong>. Si eres de los que vive con el DualSense en la mano y la emoción de un nuevo "Platino" en el corazón, estás en el lugar correcto.
 		</p>
 
-		<h2>¿Qué Hacemos?</h2>
+		<h2>¿Qué encontrarás aquí?</h2>
 		<p>
-			Día a día, rastreamos las noticias más relevantes, avances y tendencias en <strong>videojuegos de PlayStation, consolas y cultura gamer</strong>.
+			Este blog nació con una idea simple: mantenerte al día con todo lo que pasa en el universo de <strong>PlayStation</strong>. Desde los anuncios más explosivos de los State of Play, hasta esos detalles ocultos en las actualizaciones de tus juegos favoritos.
 		</p>
 		<p>
-			Nuestro contenido es curado, redactado e ilustrado utilizando herramientas de Inteligencia Artificial de vanguardia.
+			Aquí no solo hablamos de consolas; hablamos de historias, de comunidad y de la pasión que nos une a todos cuando encendemos nuestra PS5 o PS4.
 		</p>
 
-		<h2>El Futuro es Hoy</h2>
+		<h2>Para la Comunidad</h2>
 		<p>
-			A través de este espacio, buscamos no solo informar, sino también educar y preparar a nuestra sociedad para los desafíos y las inmensas oportunidades.
+			Queremos ser tu fuente confiable de noticias diarias. Sin vueltas, directo al grano y con el tono que nos gusta: de gamer a gamer. 
 		</p>
 		
-		<p>
-			<em>¡Gracias por ser parte de esta comunidad tecnológica!</em>
+		<p class="final-note">
+			<em>¡Gracias por pasar por aquí y nos vemos en la próxima partida!</em>
 		</p>
 	</div>
 </Layout>
 
 <style>
 	.about-container {
-		background: var(--glass-bg);
-		backdrop-filter: blur(12px);
-		-webkit-backdrop-filter: blur(12px);
-		border: 1px solid var(--glass-border);
-		border-radius: 20px;
+		background: var(--ps-white);
+		border-radius: 4px;
 		padding: 3rem;
-		box-shadow: var(--box-shadow);
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 		margin-top: 2rem;
 	}
 	h2 {
-		color: var(--accent);
-		margin-top: 2rem;
-		margin-bottom: 1rem;
+		color: var(--ps-blue);
+		margin-top: 2.5rem;
+		margin-bottom: 1.2rem;
 		font-size: 1.8rem;
+		font-weight: 700;
 	}
 	h2:first-child {
 		margin-top: 0;
 	}
 	p {
-		color: var(--text-primary);
+		color: #444;
 		line-height: 1.8;
 		margin-bottom: 1.5rem;
 		font-size: 1.1rem;
+	}
+	.final-note {
+		margin-top: 3rem;
+		text-align: center;
+		color: var(--ps-blue);
+		font-weight: 500;
 	}
 	@media (max-width: 720px) {
 		.about-container {

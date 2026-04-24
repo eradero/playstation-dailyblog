@@ -17,35 +17,35 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 				padding: 3rem 1.5rem;
 			}
 			.content-box {
-				background: var(--glass-bg);
-				backdrop-filter: blur(12px);
-				-webkit-backdrop-filter: blur(12px);
-				border: 1px solid var(--glass-border);
-				border-radius: 20px;
+				background: var(--ps-white);
+				border-radius: 4px;
 				padding: 3rem;
-				box-shadow: var(--box-shadow);
+				box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 			}
 			h1 {
-				color: #fff;
+				color: var(--ps-black);
 				margin-bottom: 2rem;
 				text-align: center;
+				font-weight: 700;
+				font-family: var(--font-family);
 			}
 			h2 {
-				color: var(--accent);
+				color: var(--ps-blue);
 				margin-top: 2rem;
 				margin-bottom: 1rem;
 				font-size: 1.5rem;
+				font-weight: 600;
 			}
 			p, ul {
-				color: var(--text-primary);
-				margin-bottom: 1rem;
+				color: #444;
+				margin-bottom: 1.2rem;
 				line-height: 1.8;
 			}
 			li {
 				margin-bottom: 0.5rem;
 			}
 			a {
-				color: var(--accent);
+				color: var(--ps-blue);
 				text-decoration: underline;
 			}
 			@media (max-width: 720px) {
