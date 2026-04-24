@@ -46,8 +46,8 @@ def main():
             
         print(f"Procesando nuevo artículo: {article['title']}")
         
-        # 1. Extraer contenido de la URL
-        content = extract_article_content(article["link"])
+        # 1. Extraer contenido e imagen de la URL
+        content, image_url = extract_article_content(article["link"])
         if not content:
             print("Advertencia: No se pudo extraer contenido. Usando solo el título.")
             content = "Contenido no disponible para extracción automática."
@@ -58,22 +58,27 @@ def main():
             print("Fallo la generación de IA. Saltando...")
             continue
             
-        # 3. Descargar imagen de Pollinations.ai
+        # 3. Descargar imagen real
         slug = slugify(generated_data["title"])
-        image_prompt = urllib.parse.quote(generated_data["image_prompt"])
-        image_url = f"https://image.pollinations.ai/prompt/{image_prompt}?nologo=true"
         image_path = f"/images/{slug}.jpg"
         full_image_path = os.path.join("../frontend/public", f"images/{slug}.jpg")
         
         try:
-            print(f"Descargando imagen para: {slug}")
-            os.makedirs(os.path.dirname(full_image_path), exist_ok=True)
-            img_response = requests.get(image_url, timeout=20)
-            if img_response.status_code == 200:
-                with open(full_image_path, "wb") as f:
-                    f.write(img_response.content)
+            if image_url:
+                print(f"Descargando imagen original para: {slug}")
+                os.makedirs(os.path.dirname(full_image_path), exist_ok=True)
+                # Some sites block default python user agents
+                headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
+                img_response = requests.get(image_url, timeout=20, headers=headers)
+                if img_response.status_code == 200:
+                    with open(full_image_path, "wb") as f:
+                        f.write(img_response.content)
+                else:
+                    print(f"Fallo al descargar la imagen. Status {img_response.status_code}")
+                    image_path = "" # Fallback if image fails
             else:
-                image_path = "" # Fallback if image fails
+                print("No se encontró imagen original en el artículo.")
+                image_path = ""
         except Exception as e:
             print(f"Error descargando imagen: {e}")
             image_path = ""
