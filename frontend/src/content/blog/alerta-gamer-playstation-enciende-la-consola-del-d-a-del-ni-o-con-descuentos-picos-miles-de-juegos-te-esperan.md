@@ -2,7 +2,7 @@
 title: '¡Alerta Gamer! PlayStation Enciende la Consola del Día del Niño con Descuentos Épicos: ¡Miles de Juegos te Esperan!'
 description: 'PlayStation celebra el Día del Niño con ofertas espectaculares en más de 3.000 juegos de PS4 y PS5, con descuentos de hasta el 75%.'
 pubDate: 'Apr 24 2026'
-heroImage: 'https://images.unsplash.com/photo-1607853202273-797f1c22a38e?q=80&w=1024'
+heroImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PlayStation_Store_logo.svg/1024px-PlayStation_Store_logo.svg.png'
 ---
 
 ¡Atención, comunidad PlayStation! ¡Prepárense para una de esas noticias que nos ponen la piel de gallina y el pulgar listo para la acción! Como su periodista de confianza en el universo PlayStation, vengo a compartirles una bomba que no querrán perderse. Con motivo del **Día del Niño**, nuestra querida marca azul ha tirado la casa por la ventana, lanzando una avalancha de ofertas que harán temblar la PlayStation Store.
