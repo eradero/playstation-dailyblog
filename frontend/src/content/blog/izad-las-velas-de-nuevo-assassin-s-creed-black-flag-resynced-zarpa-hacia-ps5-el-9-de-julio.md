@@ -2,7 +2,7 @@
 title: '¡Izad las Velas de Nuevo! Assassin''s Creed Black Flag Resynced Zarpa Hacia PS5 el 9 de Julio'
 description: 'Assassin''s Creed Black Flag Resynced revive la épica aventura pirata de Edward Kenway, mejorada para PlayStation 5, con lanzamiento el 9 de julio.'
 pubDate: 'Apr 24 2026'
-heroImage: '/images/izad-las-velas-de-nuevo-assassin-s-creed-black-flag-resynced-zarpa-hacia-ps5-el-9-de-julio.jpg'
+heroImage: 'https://images.unsplash.com/photo-1592155934442-cd182fe439a7?q=80&w=1024'
 ---
 
 ¡Piratas de la Galaxia PlayStation, preparad vuestros sables y izad las velas! La noticia que muchos de nosotros, amantes de los mares caribeños y las historias de bucaneros, estábamos esperando con ansia, ha llegado. **Assassin's Creed Black Flag Resynced, la versión definitiva de una de las joyas más aclamadas de Ubisoft, desembarcará en PlayStation 5 el próximo 9 de julio.** Sí, habéis leído bien. La aventura de Edward Kenway está de vuelta, y promete ser más vibrante y envolvente que nunca en la consola de nueva generación de Sony.
