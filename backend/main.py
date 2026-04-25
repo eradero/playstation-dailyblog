@@ -58,30 +58,35 @@ def main():
             print("Fallo la generación de IA. Saltando...")
             continue
             
-        # 3. Descargar imagen real
+        # 3. Determinar imagen (Real o Generada por IA)
         slug = slugify(generated_data["title"])
         image_path = f"/images/{slug}.jpg"
         full_image_path = os.path.join("../frontend/public", f"images/{slug}.jpg")
         
         try:
             if not image_url:
-                print("No se encontró imagen válida. Usando imagen genérica de PlayStation.")
-                # Fallback to a high quality generic playstation wallpaper if no image found
-                image_url = "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?q=80&w=1024&auto=format&fit=crop"
-                
+                print(f"No se encontró imagen real. Generando imagen con IA para: {slug}")
+                image_prompt = urllib.parse.quote(generated_data["image_prompt"] + ", playstation style, high quality, 4k")
+                image_url = f"https://image.pollinations.ai/prompt/{image_prompt}?model=flux&nologo=true&width=1024&height=576"
+            
             print(f"Descargando imagen para: {slug}")
             os.makedirs(os.path.dirname(full_image_path), exist_ok=True)
-            # Some sites block default python user agents
+            # Headers to avoid blocks
             headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
-            img_response = requests.get(image_url, timeout=20, headers=headers)
+            img_response = requests.get(image_url, timeout=30, headers=headers)
+            
             if img_response.status_code == 200:
                 with open(full_image_path, "wb") as f:
                     f.write(img_response.content)
             else:
-                print(f"Fallo al descargar la imagen. Status {img_response.status_code}")
-                image_path = "" # Fallback if image fails
+                print(f"Fallo al descargar la imagen (Status {img_response.status_code}). Usando fallback de seguridad.")
+                # Fallback final si falla Pollinations también
+                image_url = "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?q=80&w=1024&auto=format&fit=crop"
+                img_response = requests.get(image_url, timeout=20)
+                with open(full_image_path, "wb") as f:
+                    f.write(img_response.content)
         except Exception as e:
-            print(f"Error descargando imagen: {e}")
+            print(f"Error gestionando imagen: {e}")
             image_path = ""
             
         # 4. Guardar en el frontend (Astro format)
