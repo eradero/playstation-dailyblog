@@ -2,7 +2,7 @@
 title: '¡Atención, Gamers! Sony Eleva el Listón con una Nueva Exigencia Online que Impactará tu Experiencia PlayStation y PC'
 description: 'Descubre la nueva política de Sony que exige el enlace de cuentas PSN para funciones online, afectando a jugadores de PlayStation y PC.'
 pubDate: 'Apr 24 2026'
-heroImage: 'https://wsrv.nl/?url=upload.wikimedia.org/wikipedia/commons/0/00/PlayStation_Network_logo.svg&output=png'
+heroImage: '/images/psn-logo.png'
 ---
 
 ¡Atención, comunidad gamer! Aquí su periodista de confianza, listo para desgranar una noticia que ha estado resonando en los pasillos digitales y que, sin duda, marcará el ritmo de cómo interactuamos con el universo PlayStation en el futuro. Sony Interactive Entertainment está implementando una nueva política que afectará directamente a quienes se sumergen en las funciones online de sus juegos, especialmente si eres uno de esos valientes que también disfrutan de los títulos de PlayStation en PC.
