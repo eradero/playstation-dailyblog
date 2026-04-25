@@ -19,10 +19,14 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				padding: 64px 0;
 			}
 			.hero-image {
+				margin-bottom: 2em;
 				width: 100%;
 				margin-bottom: 2rem;
 			}
 			.hero-image img {
+				display: block;
+				margin: 0 auto;
+				border-radius: 12px;
 				display: block;
 				margin: 0 auto;
 				border-radius: 12px;
@@ -72,10 +76,11 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			<section class="article-section">
 				<div class="container">
 					<article>
+				
+				<div class="prose">
 				<div class="hero-image">
 					{heroImage && <img class="hero-img-tag" src={heroImage} alt="" />}
 				</div>
-				<div class="prose">
 					<div class="title">
 						<div class="date">
 							<FormattedDate date={pubDate} />
