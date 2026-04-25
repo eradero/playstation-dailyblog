@@ -2,8 +2,8 @@ name: Auto-Update PlayStation Blog
 
 on:
   schedule:
-    # Ejecutar cada 4 horas
-    - cron: '0 */4 * * *'
+    # Ejecutar cada 6 horas (en punto)
+    - cron: '0 */6 * * *'
   workflow_dispatch: # Permite ejecutarlo manualmente desde GitHub
 
 jobs:
@@ -38,4 +38,4 @@ jobs:
         git config --global user.email 'action@github.com'
         git add .
         # Solo hace commit si hay cambios reales
-        git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Auto-update: Nuevas noticias de IA agregadas" && git push)
+        git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Auto-update: Nuevas noticias de PlayStation" && git push)
