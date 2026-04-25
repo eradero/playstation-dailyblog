@@ -2,7 +2,7 @@
 title: '¡Alarma en el ecosistema PlayStation! ¿Un nuevo DRM digital nos obligará a conectarnos cada 30 días?'
 description: 'Un potente rumor sugiere que PlayStation podría implementar un DRM en PS4 y PS5 que requeriría una conexión online mensual para tus juegos digitales.'
 pubDate: 'Apr 25 2026'
-heroImage: '/images/ps5-logo.png'
+heroImage: '/images/ps5-console.jpg'
 ---
 
 ¡Atención, jugones de PlayStation! Un rumor que está corriendo como la pólvora por las redes ha encendido todas las alarmas en la comunidad gamer, y con razón. Se habla de una **potencial nueva política de DRM (Gestión de Derechos Digitales)** para nuestros preciados juegos digitales de PS4 y PS5 que podría cambiar radicalmente nuestra forma de entender la "propiedad" de aquello que compramos en la PlayStation Store. La especulación apunta a una **conexión online obligatoria, al menos una vez cada 30 días**, para mantener activos nuestros títulos.
