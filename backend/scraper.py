@@ -21,9 +21,6 @@ def fetch_latest_news():
     return articles
 
 def is_valid_image(url):
-    if "googleusercontent.com" in url.lower() or "gstatic.com" in url.lower(): return False
-    import re
-    if re.search(r"[=s](1|2|3)00", url.lower()): return False
     if not url: return False
     url_lower = url.lower()
     
