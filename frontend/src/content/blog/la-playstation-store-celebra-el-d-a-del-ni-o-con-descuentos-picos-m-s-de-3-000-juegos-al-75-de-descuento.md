@@ -2,7 +2,7 @@
 title: '¡La PlayStation Store Celebra el Día del Niño con Descuentos Épicos! Más de 3.000 Juegos al 75% de Descuento'
 description: 'PlayStation lanza una mega venta por el Día del Niño, ofreciendo más de 3.000 juegos de PS5 y PS4 con hasta un 75% de descuento en la Store.'
 pubDate: 'Apr 24 2026'
-heroImage: 'https://wsrv.nl/?url=rankup.com.mx/wp-content/uploads/2025/04/PLAYSTATION-STORE-CELEBRA-EL-DIA-DEL-NINO-CON-DESCUENTOS-EN-GRANDES-JUEGOS-1-scaled.webp'
+heroImage: 'https://images.unsplash.com/photo-1592155934442-cd182fe439a7?q=80&w=1024'
 ---
 
 ¡Qué tal, *gamers*! Aquí su servidor y amigo, listo para traerles las noticias más candentes del universo PlayStation. Y déjenme decirles, la *PlayStation Store* ha vuelto a tirar la casa por la ventana con una promoción que simplemente no pueden dejar pasar. Con motivo del **Día del Niño**, pero créanme, ¡esto es para todos los niños y niñas que llevamos dentro, sin importar la edad!, Sony ha desplegado una ofensiva de descuentos que hará temblar sus carteras (¡en el buen sentido!).
