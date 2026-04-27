@@ -35,21 +35,12 @@ nav a {
     text-decoration: none;
 }
 
-/* El MAIN es transparente para que el HOME flote */
+/* El MAIN es transparente para el Home */
 main {
     background: transparent;
 }
 
-/* Estilo para el recuadro de las notas individuales */
-.reading-box {
-    background-color: var(--ps-white) !important;
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 3rem;
-    border-radius: 20px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
-}
-
+/* Las tarjetas del Home flotan */
 .ps-card {
     background: var(--ps-white);
     border-radius: 12px;
@@ -60,6 +51,15 @@ main {
 
 .ps-card:hover {
     transform: translateY(-5px);
+}
+
+/* RECUADRO DE LECTURA PARA LAS NOTAS */
+.prose {
+    background-color: var(--ps-white) !important;
+    padding: 3rem !important;
+    border-radius: 24px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+    margin: 2rem auto !important;
 }
 
 h1, h2, h3 { color: var(--ps-black); }
