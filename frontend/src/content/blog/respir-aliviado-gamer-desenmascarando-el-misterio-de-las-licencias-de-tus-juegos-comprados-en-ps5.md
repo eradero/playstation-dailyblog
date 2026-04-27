@@ -2,7 +2,7 @@
 title: '¡Respirá Aliviado, Gamer! Desenmascarando el Misterio de las Licencias de Tus Juegos Comprados en PS5'
 description: 'Esta semana circuló un rumor que puso en alerta a la comunidad: ¿un límite de 30 días en las licencias de nuestros juegos de PS5? Acá te contamos la verdad, lo que sabemos, y por qué tus compras están seguras.'
 pubDate: 'Apr 27 2026'
-heroImage: '/images/respir-aliviado-gamer-desenmascarando-el-misterio-de-las-licencias-de-tus-juegos-comprados-en-ps5.jpg'
+heroImage: '/images/ps5-digital-licenses.jpg'
 affiliateLink: 'https://www.amazon.com/s?k=PS5+console+and+games&tag=blogseradero-20'
 ---
 

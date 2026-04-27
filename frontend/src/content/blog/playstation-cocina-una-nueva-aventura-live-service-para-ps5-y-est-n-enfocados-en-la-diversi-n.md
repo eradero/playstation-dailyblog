@@ -2,7 +2,7 @@
 title: '¡PlayStation Cocina una Nueva Aventura Live Service para PS5 y Están Enfocados en la DIVERSIÓN!'
 description: 'PlayStation está apostando fuerte por el futuro de los juegos como servicio en PS5, y un nuevo título está en el horno. Descubre cómo están abordando el desafío de crear una experiencia inolvidable y llena de diversión duradera. ¡La próxima gran cosa podría estar en camino!'
 pubDate: 'Apr 27 2026'
-heroImage: '/images/playstation-cocina-una-nueva-aventura-live-service-para-ps5-y-est-n-enfocados-en-la-diversi-n.jpg'
+heroImage: '/images/ps-live-service-dev.jpg'
 affiliateLink: 'https://www.amazon.com/s?k=PlayStation+5+console+and+games&tag=blogseradero-20'
 ---
 
