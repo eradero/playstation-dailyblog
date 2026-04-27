@@ -89,7 +89,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				<div class="container">
 					<article>
 				
-				<div class="prose">
+				<div class="prose" style="background-color: white !important; display: block; position: relative; z-index: 10; padding: 3rem; border-radius: 24px; box-shadow: 0 20px 50px rgba(0,0,0,0.2);">
 				<div class="hero-image">
 					{heroImage && <img class="hero-img-tag" src={heroImage} alt="" />}
 				</div>
@@ -110,7 +110,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 					<slot />
                     <div style="margin-top: 4rem;">
                         <hr />
-                        <h2 style="text-align: center; margin-bottom: 2rem;">Comentarios</h2>
+                        <h2 style="text-align: center; margin-bottom: 2rem;">Comentarios (Actualizado)</h2>
                         <script src="https://utteranc.es/client.js"
                                 repo="eradero/playstation-dailyblog"
                                 issue-term="pathname"
