@@ -182,3 +182,12 @@ a:hover {
 	background: linear-gradient(to bottom, var(--ps-shadow-black), var(--ps-black));
 }
 /* Restoration Patch */
+
+/* Solo fondo, sin tocar el diseño original */
+body {
+    background-image: url('/images/ps-background.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
