@@ -181,3 +181,4 @@ a:hover {
 .dark-gradient {
 	background: linear-gradient(to bottom, var(--ps-shadow-black), var(--ps-black));
 }
+/* Restoration Patch */
