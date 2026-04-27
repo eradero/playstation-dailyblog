@@ -11,7 +11,7 @@ type Props = CollectionEntry<'blog'>['data'];
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 ---
 
-<html lang="en">
+<html lang="es-AR">
 	<head>
 		<BaseHead title={title} description={description} />
 		<style>
@@ -22,39 +22,22 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				width: 100%;
 				display: flex;
 				justify-content: center;
-				margin-bottom: 2em;
-				width: 100%;
 				margin-bottom: 2rem;
 			}
 			.hero-image img {
 				width: 100%;
-				max-width: 720px;
-				height: auto;
-				display: block;
-				margin: 0 auto 2rem auto;
-				border-radius: 12px;
-				display: block;
-				margin: 0 auto;
-				border-radius: 12px;
-				display: block;
-				margin: 0 auto;
-				border-radius: 12px;
-				box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.08);
-				width: 100%;
-				height: auto;
 				max-width: 1024px;
+				height: auto;
 				aspect-ratio: 16 / 9;
 				object-fit: cover;
+				border-radius: 12px;
+				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 			}
 			.prose {
-				width: 800px;
+				width: 900px;
 				max-width: calc(100% - 2em);
-				margin: 2rem auto;
-				padding: 3em;
+				margin: auto;
 				color: var(--text-body);
-				background-color: white !important; /* RECUADRO BLANCO SOLIDO */
-				border-radius: 24px;
-				box-shadow: 0 20px 50px rgba(0,0,0,0.2);
 			}
 			.title {
 				margin-bottom: 2em;
@@ -74,55 +57,49 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				letter-spacing: 0.5px;
 				font-size: 14px;
 			}
-			.last-updated-on {
-				font-style: italic;
-				color: var(--text-secondary);
-				font-size: 0.9em;
-			}
 		</style>
 	</head>
 
-	<body >
+	<body>
 		<Header />
 		<main>
-			<section class="article-section reading-box">
+			<section class="article-section">
 				<div class="container">
 					<article>
-				
-				<div class="prose" style="background-color: white !important; display: block; position: relative; z-index: 10; padding: 3rem; border-radius: 24px; box-shadow: 0 20px 50px rgba(0,0,0,0.2);">
-				<div class="hero-image">
-					{heroImage && <img class="hero-img-tag" src={heroImage} alt="" />}
-				</div>
-					<div class="title">
-						<div class="date">
-							<FormattedDate date={pubDate} />
-							{
-								updatedDate && (
-									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
-									</div>
-								)
-							}
-						</div>
-						<h1>{title}</h1>
-						<hr />
-					</div>
-					<slot />
-                    <div style="margin-top: 4rem;">
-                        <hr />
-                        <h2 style="text-align: center; margin-bottom: 2rem;">Comentarios (Actualizado)</h2>
-                        <script src="https://utteranc.es/client.js"
-                                repo="eradero/playstation-dailyblog"
-                                issue-term="pathname"
-                                label="comments"
-                                theme="github-light"
-                                crossorigin="anonymous"
-                                async>
-                        </script>
-                    </div>
-
-				</div>
-			</article>
+                        <div class="prose reading-box-container">
+                            <div class="hero-image">
+                                {heroImage && <img src={heroImage} alt="" />}
+                            </div>
+                            <div class="title">
+                                <div class="date">
+                                    <FormattedDate date={pubDate} />
+                                    {
+                                        updatedDate && (
+                                            <div class="last-updated-on">
+                                                Last updated on <FormattedDate date={updatedDate} />
+                                            </div>
+                                        )
+                                    }
+                                </div>
+                                <h1>{title}</h1>
+                                <hr />
+                            </div>
+                            <slot />
+                            
+                            <div style="margin-top: 4rem;">
+                                <hr />
+                                <h2 style="text-align: center; margin-bottom: 2rem;">Comentarios</h2>
+                                <script src="https://utteranc.es/client.js"
+                                        repo="eradero/playstation-dailyblog"
+                                        issue-term="pathname"
+                                        label="comments"
+                                        theme="github-light"
+                                        crossorigin="anonymous"
+                                        async>
+                                </script>
+                            </div>
+                        </div>
+                    </article>
 				</div>
 			</section>
 		</main>

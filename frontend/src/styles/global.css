@@ -3,63 +3,94 @@
 :root {
 	--ps-blue: #0070cc;
 	--ps-black: #000000;
+	--ps-cyan: #1eaedb;
 	--ps-white: #ffffff;
 	--ps-ice: #f5f7fa;
+	--ps-shadow-black: #121314;
+	--ps-divider: #f3f3f3;
 	--text-display: #000000;
 	--text-body: #1f1f1f;
+	--text-secondary: #6b6b6b;
+	--text-inverse: #ffffff;
+	--link-hover-blue: #1883fd;
 	--font-family: 'Inter', sans-serif;
 }
 
 body {
+	font-family: var(--font-family);
+	margin: 0;
+	padding: 0;
+	color: var(--text-body);
     background-image: url('/images/ps-background.png');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh;
-    margin: 0;
-    font-family: var(--font-family);
+	-webkit-font-smoothing: antialiased;
 }
 
+/* Header & Footer */
 header {
     background: var(--ps-white);
-    border-bottom: 1px solid var(--ps-ice);
+    border-bottom: 1px solid var(--ps-divider);
     padding: 1rem 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+footer {
+    background: var(--ps-black);
+    color: var(--ps-white);
+    padding: 3rem 0;
+    text-align: center;
 }
 
-nav a {
-    color: var(--ps-blue) !important;
-    font-weight: 600;
-    margin: 0 1rem;
-    text-decoration: none;
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-family);
+	margin: 0 0 0.5rem 0;
+	color: var(--text-display);
 }
 
-/* El MAIN es transparente para el Home */
-main {
-    background: transparent;
-}
+.display-xl { font-size: clamp(32px, 5vw, 54px); font-weight: 300; line-height: 1.25; }
 
-/* Las tarjetas del Home flotan */
+/* Home Utility Classes */
+.surface-dark { background-color: var(--ps-black); color: var(--text-inverse); }
+.surface-white { background-color: transparent !important; } /* Home transparente */
+.dark-gradient { background: linear-gradient(to bottom, var(--ps-shadow-black), var(--ps-black)); }
+
+.container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+
+/* Buttons */
+.ps-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--ps-blue);
+	color: var(--ps-white) !important;
+	padding: 12px 24px;
+	border-radius: 999px;
+	text-decoration: none;
+	transition: transform 0.2s;
+}
+.ps-btn:hover { transform: scale(1.05); }
+
+/* Cards Home */
 .ps-card {
-    background: var(--ps-white);
-    border-radius: 12px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+	background: var(--ps-white);
+	border-radius: 12px;
+	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.08);
+	overflow: hidden;
+	transition: transform 0.2s ease;
+	display: flex;
+	flex-direction: column;
 }
+.ps-card:hover { transform: translateY(-4px); }
+.ps-card-content { padding: 24px; }
+.ps-card-title { font-size: 22px; font-weight: 500; color: var(--text-display); }
 
-.ps-card:hover {
-    transform: translateY(-5px);
-}
-
-/* RECUADRO DE LECTURA PARA LAS NOTAS */
-.prose {
+/* RECUADRO DE LECTURA (SOLO PARA NOTAS) */
+.reading-box-container {
     background-color: var(--ps-white) !important;
-    padding: 3rem !important;
+    padding: 3rem;
     border-radius: 24px;
     box-shadow: 0 20px 50px rgba(0,0,0,0.2);
-    margin: 2rem auto !important;
+    margin: 2rem auto;
 }
-
-h1, h2, h3 { color: var(--ps-black); }
