@@ -191,3 +191,12 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+/* Hacer transparente el fondo que tapa la imagen */
+body, .surface-white {
+    background-color: transparent !important;
+}
+
+main {
+    background-color: transparent !important;
+}
