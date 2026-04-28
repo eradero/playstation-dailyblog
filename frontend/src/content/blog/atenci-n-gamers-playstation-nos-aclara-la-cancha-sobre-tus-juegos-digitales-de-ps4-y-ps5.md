@@ -12,7 +12,7 @@ affiliateLink: 'https://www.amazon.com/s?k=PlayStation+5+digital+games&tag=blogs
 
 ### **La Novedad: Tu Consola y la Conexión a Internet**
 
-Che, ¿viste que siempre hay rumores y especulaciones dando vueltas en la comunidad? Bueno, esta vez es oficial y, como siempre, estamos acá para contártelo sin vueltas. PlayStation implementó un sistema de DRM (Gestión de Derechos Digitales) para los juegos que comprás y descargás directamente a tu consola.
+¿viste que siempre hay rumores y especulaciones dando vueltas en la comunidad? Bueno, esta vez es oficial y, como siempre, estamos acá para contártelo sin vueltas. PlayStation implementó un sistema de DRM (Gestión de Derechos Digitales) para los juegos que comprás y descargás directamente a tu consola.
 
 ¿Qué significa esto en la práctica? Atenti: **tu consola, ya sea una PS4 que tanto queremos o tu potentísima PS5, va a necesitar conectarse a internet al menos una vez cada 30 días para verificar las licencias de tus juegos digitales.**
 

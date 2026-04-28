@@ -1,8 +1,8 @@
 ---
-title: '¡Che, gamer! ¿Tu PS5 te bloquea los juegos si te desconectás? Despejamos el mito del DRM (¡y te contamos la posta!)'
+title: '¡gamer! ¿Tu PS5 te bloquea los juegos si te desconectás? Despejamos el mito del DRM (¡y te contamos la posta!)'
 description: '¿Alguna vez te preocupó que tu PS5 te deje sin juegos digitales si te pasás mucho tiempo offline? Acá te contamos la verdad sobre el DRM de PlayStation y cómo funciona de verdad, ¡sin drama!'
 pubDate: 'Apr 28 2026'
-heroImage: '/images/che-gamer-tu-ps5-te-bloquea-los-juegos-si-te-desconect-s-despejamos-el-mito-del-drm-y-te-contamos-la-posta.jpg'
+heroImage: '/images/gamer-tu-ps5-te-bloquea-los-juegos-si-te-desconect-s-despejamos-el-mito-del-drm-y-te-contamos-la-posta.jpg'
 affiliateLink: 'https://www.amazon.com/s?k=PS5+digital+games&tag=blogseradero-20'
 ---
 

@@ -1,12 +1,12 @@
 ---
-title: '¡Che, Gamer! ¿Tus Juegos de PS5 Tienen Fecha de Vencimiento? ¡Despejamos el Misterio!'
+title: '¡Gamer! ¿Tus Juegos de PS5 Tienen Fecha de Vencimiento? ¡Despejamos el Misterio!'
 description: 'Una noticia generó revuelo en la comunidad, pero tranquilo, acá te contamos la verdad sobre la "caducidad" de tus juegos de PS4 y PS5 y cómo esto no te va a arruinar la experiencia de tu consola favorita. ¡A informarse sin dramas!'
 pubDate: 'Apr 28 2026'
-heroImage: '/images/che-gamer-tus-juegos-de-ps5-tienen-fecha-de-vencimiento-despejamos-el-misterio.jpg'
+heroImage: '/images/gamer-tus-juegos-de-ps5-tienen-fecha-de-vencimiento-despejamos-el-misterio.jpg'
 affiliateLink: 'https://www.amazon.com/s?k=PS5+console+and+games&tag=blogseradero-20'
 ---
 
-¡Che, gamers de PS5! ¿Cómo andamos por la zona? Hoy tenemos que charlar de algo que dio vueltas por los medios y seguro te hizo saltar una alarma: la supuesta "caducidad" de tus juegos de PS4 y PS5. ¡Tranquilo, no tires el joystick todavía! Como tu periodista amigo, acá te voy a contar la posta, sin pánico y con la data justa para que sigas disfrutando de tu consola favorita al máximo.
+¡gamers de PS5! ¿Cómo andamos por la zona? Hoy tenemos que charlar de algo que dio vueltas por los medios y seguro te hizo saltar una alarma: la supuesta "caducidad" de tus juegos de PS4 y PS5. ¡Tranquilo, no tires el joystick todavía! Como tu periodista amigo, acá te voy a contar la posta, sin pánico y con la data justa para que sigas disfrutando de tu consola favorita al máximo.
 
 ---
 
