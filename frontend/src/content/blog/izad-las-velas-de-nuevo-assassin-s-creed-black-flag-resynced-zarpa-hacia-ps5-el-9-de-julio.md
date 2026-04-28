@@ -26,4 +26,4 @@ La llegada de Black Flag Resynced a PlayStation 5 no es una simple re-edición; 
 
 Si nunca tuviste la oportunidad de vivir la saga de Edward Kenway, este es el momento perfecto. Y si eres un veterano de los siete mares, prepárate para revivir una de las mejores narrativas piratas jamás contadas en un videojuego, con una capa de pulido y mejoras que harán que la experiencia se sienta fresca y renovada.
 
-Marca el **9 de julio** en tu calendario, porque la aventura más épica de capa y espada (y parche en el ojo) está a punto de atracar en tu PlayStation 5. ¡Nos vemos en el Caribe!
+Marca el **9 de julio** en tu calendario, porque la aventura más épica de capa y espada (y paren el ojo) está a punto de atracar en tu PlayStation 5. ¡Nos vemos en el Caribe!

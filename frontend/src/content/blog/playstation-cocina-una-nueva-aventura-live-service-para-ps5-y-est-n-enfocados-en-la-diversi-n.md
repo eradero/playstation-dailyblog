@@ -26,7 +26,7 @@ Esto nos entusiasma, porque significa que están comprometidos a entregar calida
 
 ## ¿Qué Podemos Esperar en PS5?
 
-Con la potencia de PS5, las posibilidades son infinitas. Imaginemos un juego live service que aproveche al máximo:
+Con la potencia de PS5, las posibilidades son infinitas. Imaginemos un juego live service que aproveal máximo:
 
 *   **La velocidad del SSD**: Cargas instantáneas para que nunca nos detengamos.
 *   **La inmersión del DualSense**: Retroalimentación háptica y gatillos adaptativos que nos hagan sentir cada acción.

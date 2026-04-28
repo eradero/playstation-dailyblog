@@ -37,6 +37,6 @@ Aquí es donde la cosa se pone seria para nosotros, los gamers.
 
 La comunidad ya está expresando su preocupación y, en muchos casos, su indignación. Medidas restrictivas como esta tienden a generar una fuerte resistencia por parte de los consumidores, que valoran la libertad de jugar sus títulos cuándo y cómo quieran, especialmente después de haber pagado por ellos.
 
-Como periodistas y gamers apasionados, seguiremos de cerca este rumor. La pelota está en el tejado de Sony. Esperamos que, si este DRM es más que una simple especulación, la compañía salga a dar explicaciones claras y, sobre todo, que escuche a su comunidad. El ecosistema PlayStation es fuerte por sus juegos y por sus jugadores, y cualquier cambio que afecte a la experiencia fundamental debe ser comunicado con total transparencia.
+Como periodistas y gamers apasionados, seguiremos de cerca este rumor. La pelota está en el tejado de Sony. Esperamos que, si este DRM es más que una simple especulación, la compañía salga a dar explicaciones claras y, sobre todo, que escua su comunidad. El ecosistema PlayStation es fuerte por sus juegos y por sus jugadores, y cualquier cambio que afecte a la experiencia fundamental debe ser comunicado con total transparencia.
 
 Mientras tanto, cuéntanos en los comentarios: **¿Qué opinas de esta posibilidad? ¿Afectaría tu forma de comprar juegos en la PlayStation Store?** ¡Queremos leer vuestra opinión!
