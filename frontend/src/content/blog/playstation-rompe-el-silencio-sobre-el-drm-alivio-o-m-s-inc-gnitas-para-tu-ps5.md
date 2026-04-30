@@ -2,7 +2,7 @@
 title: '¡PlayStation Rompe el Silencio sobre el DRM! ¿Alivio o Más Incógnitas para tu PS5?'
 description: 'Después de mucha expectativa, PlayStation se pronunció sobre el controvertido DRM. ¿Qué significa su respuesta para los juegos que tenés y los que vas a tener en tu PS5? Te contamos todo lo que sabemos (y lo que no tanto).'
 pubDate: 'Apr 30 2026'
-heroImage: '/images/playstation-rompe-el-silencio-sobre-el-drm-alivio-o-m-s-inc-gnitas-para-tu-ps5.jpg'
+heroImage: '/images/playstation-rompe-el-silencio-sobre-el-drm-alivio-o-m-s-inc-gnitas-para-tu-ps5.png'
 affiliateLink: 'https://www.amazon.com/s?k=consola+playstation+5+juegos+ps5&tag=blogseradero-20'
 ---
 
