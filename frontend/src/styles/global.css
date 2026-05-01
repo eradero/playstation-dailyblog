@@ -14,9 +14,9 @@
 	--text-inverse: #ffffff;
 	--link-hover-blue: #1883fd;
 	--font-family: 'Inter', sans-serif;
-	--glass-bg: rgba(20, 25, 40, 0.6);
-	--glass-border: rgba(255, 255, 255, 0.1);
-	--box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+	--glass-bg: rgba(255, 255, 255, 0.75);
+	--glass-border: rgba(255, 255, 255, 0.3);
+	--box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -88,11 +88,11 @@ h1, h2, h3, h4, h5, h6 {
 	transition: transform 0.2s ease;
 	display: flex;
 	flex-direction: column;
-	color: var(--ps-white);
+	color: var(--text-body);
 }
 .ps-card:hover { transform: translateY(-4px); }
 .ps-card-content { padding: 24px; }
-.ps-card-title { font-size: 22px; font-weight: 500; color: var(--ps-white); }
+.ps-card-title { font-size: 22px; font-weight: 500; color: var(--text-display); }
 
 /* RECUADRO DE LECTURA (SOLO PARA NOTAS) */
 .reading-box-container {
@@ -104,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 24px;
     box-shadow: var(--box-shadow);
     margin: 2rem auto;
-	color: var(--ps-white);
+	color: var(--text-body);
 }
 
 .reading-box-container h1, 
@@ -113,11 +113,11 @@ h1, h2, h3, h4, h5, h6 {
 .reading-box-container h4, 
 .reading-box-container h5, 
 .reading-box-container h6 {
-	color: var(--ps-white) !important;
+	color: var(--text-display) !important;
 }
 
 .reading-box-container p {
-	color: rgba(255, 255, 255, 0.9);
+	color: var(--text-body);
 }
 
 .reading-box-container hr {
@@ -127,15 +127,15 @@ h1, h2, h3, h4, h5, h6 {
 /* Contrast adjustments for glass panels */
 .ps-card .date-tag, 
 .reading-box-container .date {
-	color: var(--ps-cyan) !important;
+	color: var(--ps-blue) !important;
 }
 
 .ps-card p,
 .reading-box-container p {
-	color: rgba(255, 255, 255, 0.8) !important;
+	color: var(--text-body) !important;
 }
 
 .ps-card-title:hover {
-	color: var(--ps-cyan) !important;
+	color: var(--ps-blue) !important;
 }
 
