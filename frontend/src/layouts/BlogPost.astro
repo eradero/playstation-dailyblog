@@ -87,11 +87,11 @@ const { title, description, pubDate, updatedDate, heroImage, affiliateLink } = A
                             <slot />
                             
                             {affiliateLink && (
-                                <div class="affiliate-cta" style="margin-top: 3rem; padding: 2rem; border: 2px dashed #003087; border-radius: 16px; text-align: center; background: rgba(0, 48, 135, 0.05);">
-                                    <h3 style="margin-bottom: 1rem; color: #003087;">¡Subí de nivel tu PlayStation!</h3>
-                                    <p style="margin-bottom: 1.5rem;">Encontrá las mejores ofertas en consolas, juegos físicos y accesorios originales en Amazon.</p>
+                                <div class="affiliate-cta" style="margin-top: 3rem; padding: 2rem; border: 2px dashed var(--ps-cyan); border-radius: 16px; text-align: center; background: rgba(30, 174, 219, 0.1);">
+                                    <h3 style="margin-bottom: 1rem; color: var(--ps-cyan);">¡Subí de nivel tu PlayStation!</h3>
+                                    <p style="margin-bottom: 1.5rem; color: rgba(255, 255, 255, 0.9);">Encontrá las mejores ofertas en consolas, juegos físicos y accesorios originales en Amazon.</p>
                                     <a href={affiliateLink} target="_blank" rel="noopener noreferrer" 
-                                       style="display: inline-block; background: #003087; color: white; padding: 12px 24px; border-radius: 30px; font-weight: bold; text-decoration: none; transition: transform 0.2s ease; box-shadow: 0 4px 12px rgba(0, 48, 135, 0.3);">
+                                       style="display: inline-block; background: var(--ps-blue); color: white; padding: 12px 24px; border-radius: 30px; font-weight: bold; text-decoration: none; transition: transform 0.2s ease; box-shadow: 0 4px 12px rgba(0, 112, 204, 0.3);">
                                         🛒 Ver en Amazon
                                     </a>
                                 </div>
@@ -104,7 +104,7 @@ const { title, description, pubDate, updatedDate, heroImage, affiliateLink } = A
                                         repo="eradero/playstation-dailyblog"
                                         issue-term="pathname"
                                         label="comments"
-                                        theme="github-light"
+                                        theme="github-dark"
                                         crossorigin="anonymous"
                                         async>
                                 </script>

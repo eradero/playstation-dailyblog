@@ -14,6 +14,9 @@
 	--text-inverse: #ffffff;
 	--link-hover-blue: #1883fd;
 	--font-family: 'Inter', sans-serif;
+	--glass-bg: rgba(20, 25, 40, 0.6);
+	--glass-border: rgba(255, 255, 255, 0.1);
+	--box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 body {
@@ -75,23 +78,64 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Cards Home */
 .ps-card {
-	background: var(--ps-white);
+	background: var(--glass-bg);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	border: 1px solid var(--glass-border);
 	border-radius: 12px;
-	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.08);
+	box-shadow: var(--box-shadow);
 	overflow: hidden;
 	transition: transform 0.2s ease;
 	display: flex;
 	flex-direction: column;
+	color: var(--ps-white);
 }
 .ps-card:hover { transform: translateY(-4px); }
 .ps-card-content { padding: 24px; }
-.ps-card-title { font-size: 22px; font-weight: 500; color: var(--text-display); }
+.ps-card-title { font-size: 22px; font-weight: 500; color: var(--ps-white); }
 
 /* RECUADRO DE LECTURA (SOLO PARA NOTAS) */
 .reading-box-container {
-    background-color: var(--ps-white) !important;
+    background: var(--glass-bg) !important;
+	backdrop-filter: blur(16px);
+	-webkit-backdrop-filter: blur(16px);
+	border: 1px solid var(--glass-border);
     padding: 3rem;
     border-radius: 24px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+    box-shadow: var(--box-shadow);
     margin: 2rem auto;
+	color: var(--ps-white);
 }
+
+.reading-box-container h1, 
+.reading-box-container h2, 
+.reading-box-container h3, 
+.reading-box-container h4, 
+.reading-box-container h5, 
+.reading-box-container h6 {
+	color: var(--ps-white) !important;
+}
+
+.reading-box-container p {
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.reading-box-container hr {
+	border-color: var(--glass-border);
+}
+
+/* Contrast adjustments for glass panels */
+.ps-card .date-tag, 
+.reading-box-container .date {
+	color: var(--ps-cyan) !important;
+}
+
+.ps-card p,
+.reading-box-container p {
+	color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.ps-card-title:hover {
+	color: var(--ps-cyan) !important;
+}
+
